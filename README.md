@@ -20,10 +20,10 @@ This is a command-line application that calculates the amount of fuel required f
 
 ### Running the Program
 
-To calculate the fuel required for a mission, run the `rocket_fuel_calculator` script with the following command:
+To calculate the fuel required for a mission, run the `rocket_fuel_calculator.rb` script with the following command:
 
 ```
-./bin/fuel_calculator <mass> <path>
+./bin/fuel_calculator.rb <mass> <path>
 ```
 
 Replace `<mass>` with the mass of the spacecraft in kilograms and `<path>` with the flight path in the format `launch earth land moon launch moon land earth ...`.
@@ -33,7 +33,14 @@ The flight path should be provided as a list of tuples, where each tuple contain
 #### Example
 
 ```
-./bin/fuel_calculator 28801 launch earth land moon launch moon land earth
+./bin/fuel_calculator.rb 28801 launch earth land moon launch moon land earth
 ```
 
 This will calculate the total fuel required for the specified mission.
+
+### Running Tests
+
+To run the tests for this project, follow these steps:
+1. Navigate to the project directory
+2. Run `bundle`
+3. Run `rspec .` - This will run all the tests and display the results
