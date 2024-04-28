@@ -2,8 +2,8 @@
 
 require_relative '../lib/rocket_launcher'
 
-mass = ARGV[1].to_i
-path = ARGV[2..-1]&.each_slice(2)&.map { |action, target| [action.to_sym, target&.downcase] }
+mass = ARGV[0].to_i
+path = ARGV[1..-1]&.each_slice(2)&.map { |action, target| [action.to_sym, target&.downcase] }
 
 def print_usage
   puts "Usage: rocket_fuel_calculator <mass> <path>"
