@@ -1,4 +1,4 @@
-require "./rocket_launcher"
+require "rocket_launcher"
 
 RSpec.describe RocketLauncher do
   subject(:rocket_launcher) { described_class.new(ship_mass, route) }
